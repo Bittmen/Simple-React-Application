@@ -2,34 +2,34 @@ import React from 'react';
 import Foto from '../assets/images/yo.jpg'
 
 const profile = () => {
- return <div class="container">
-            <div class="row">
-                <div class="col-3 border">
-                    <div id="foto" class="text-center mt-3">
-                        <img class="img-thumbnail" src={Foto} alt="Me"></img>
+ return <div className="container">
+            <div className="row">
+                <div className="col-3 border">
+                    <div id="foto" className="text-center mt-3">
+                        <img className="img-thumbnail" src={Foto} alt="Me"></img>
                     </div>
                     <div class="form-group">
                         <label>Cambiar foto</label>
-                        <input type="file" class="form-control" />
+                        <input type="file" className="form-control" />
                     </div>
                 </div>
-                <div class="col-9">
+                <div className="col-9">
                     <form>
-                        <h3 class="text-center">Profile</h3>
-                        <div class="form-group">
+                        <h3 className="text-center">Profile</h3>
+                        <div className="form-group">
                             <label for="intro">Introduction</label>
-                            <textarea class="form-control" name="intro" id="intro" cols="5" rows="6">
-                                 Hi, i am Rodolfo, a javascript developer, based in Queretaro city 💻
+                            <textarea className="form-control" name="intro" id="intro" cols="5" rows="6">
+                                 Hi, i am Rodolfo, a javascript developer, based in Queretaro city <span role="img" aria-label="true">💻</span>
                             </textarea>
                         </div>
-                        <div class="form-group">
+                        <div className="form-group">
                             <label for="about">About me</label>
-                            <textarea class="form-control" name="about" id="about" cols="5" rows="6">
+                            <textarea className="form-control" name="about" id="about" cols="5" rows="6">
                                 I enjoy creating applications using the MEAN stack because it is the one
                                 i like the most, however i also like using other stacks such as MERN.
                             </textarea>
                         </div>
-                        <div class="text-center">
+                        <div className="text-center">
                             <button type="submit" class="btn btn-sm btn-secondary">Actualizar</button>
                         </div>
                     </form>
